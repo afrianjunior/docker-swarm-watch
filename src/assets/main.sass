@@ -1,0 +1,290 @@
+@import './font-setup'
+@import './reset'
+@import './variables'
+
+.node-wrapper
+  overflow-x: auto
+  width: fit-content
+  margin: 20px auto
+  display: flex
+  justify-content: center
+
+.node-container-wrapper
+  min-height: calc(8 * 56px)
+
+.bg_primary
+  background-color: var(--primary-color) !important
+  color: var(--white-color) !important
+
+.bg_clear
+  background-color: transparent !important
+
+.display
+  &_flex
+    display: flex
+
+.text-color
+  color: var(--white-color)
+  &_gray
+    color: var(--gray-color)
+
+.text-transform_uppercase
+  text-transform: uppercase
+
+.rounded
+  border-radius: 4px
+  &_lg
+    border-radius: 8px
+
+.text-size
+  &_xs
+    font-size: var(--size-extra-small)
+  
+  &_sm
+    font-size: var(--size-small)
+
+  &_md
+    font-size: var(--size-medium)
+  
+  &_lg
+    font-size: var(--size-large)
+
+  &_xl
+    font-size: var(--size-extra-large)
+
+.font-weight
+  &_normal
+    font-weight: var(--font-weight-normal)
+  
+  &_thin
+    font-weight: var(--font-weight-thin)
+
+  &_bold
+    font-weight: var(--font-weight-bold)
+
+.margin
+  &_xs
+    margin: var(--size-extra-small)
+  
+  &_sm
+    margin: var(--size-small)
+
+  &_md
+    margin: var(--size-medium)
+  
+  &_lg
+    margin: var(--size-large)
+
+  &_xl
+    margin: var(--size-extra-large)
+
+.margin-top
+  &_xs
+    margin-top: var(--size-extra-small)
+  
+  &_sm
+    margin-top: var(--size-small)
+
+  &_md
+    margin-top: var(--size-medium)
+  
+  &_lg
+    margin-top: var(--size-large)
+
+  &_xl
+    margin-top: var(--size-extra-large)
+
+.margin-bottom
+  &_xs
+    margin-bottom: var(--size-extra-small)
+  
+  &_sm
+    margin-bottom: var(--size-small)
+
+  &_md
+    margin-bottom: var(--size-medium)
+  
+  &_lg
+    margin-bottom: var(--size-large)
+
+  &_xl
+    margin-bottom: var(--size-extra-large)
+
+.margin-right
+  &_xs
+    margin-right: var(--size-extra-small)
+  
+  &_sm
+    margin-right: var(--size-small)
+
+  &_md
+    margin-right: var(--size-medium)
+  
+  &_lg
+    margin-right: var(--size-large)
+
+  &_xl
+    margin-right: var(--size-extra-large)
+
+.margin-left
+  &_xs
+    margin-left: var(--size-extra-small)
+  
+  &_sm
+    margin-left: var(--size-small)
+
+  &_md
+    margin-left: var(--size-medium)
+  
+  &_lg
+    margin-left: var(--size-large)
+
+  &_xl
+    margin-left: var(--size-extra-large)
+
+.padding
+  &_xs
+    padding: var(--size-extra-small)
+  
+  &_sm
+    padding: var(--size-small)
+
+  &_md
+    padding: var(--size-medium)
+  
+  &_lg
+    padding: var(--size-large)
+
+  &_xl
+    padding: var(--size-extra-large)
+
+.padding-top
+  &_xs
+    padding-top: var(--size-extra-small)
+  
+  &_sm
+    padding-top: var(--size-small)
+
+  &_md
+    padding-top: var(--size-medium)
+  
+  &_lg
+    padding-top: var(--size-large)
+
+  &_xl
+    padding-top: var(--size-extra-large)
+
+.padding-bottom
+  &_xs
+    padding-bottom: var(--size-extra-small)
+  
+  &_sm
+    padding-bottom: var(--size-small)
+
+  &_md
+    padding-bottom: var(--size-medium)
+  
+  &_lg
+    padding-bottom: var(--size-large)
+
+  &_xl
+    padding-bottom: var(--size-extra-large)
+
+.padding-right
+  &_xs
+    padding-right: var(--size-extra-small)
+  
+  &_sm
+    padding-right: var(--size-small)
+
+  &_md
+    padding-right: var(--size-medium)
+  
+  &_lg
+    padding-right: var(--size-large)
+
+  &_xl
+    padding-right: var(--size-extra-large)
+
+.padding-left
+  &_xs
+    padding-left: var(--size-extra-small)
+  
+  &_sm
+    padding-left: var(--size-small)
+
+  &_md
+    padding-left: var(--size-medium)
+  
+  &_lg
+    padding-left: var(--size-large)
+
+  &_xl
+    padding-left: var(--size-extra-large)
+
+.border
+  &_all
+    border: 2px solid var(--gray-color)
+  
+  &_top
+    border-top: 2px solid var(--gray-color)
+
+  &_right
+    border-right: 2px solid var(--gray-color)
+  
+  &_bottom
+    border-bottom: 2px solid var(--gray-color)
+
+  &_left
+    border-left: 2px solid var(--gray-color)
+
+.container
+  background-color: transparent
+
+  &_canvas
+    width: auto
+
+  &_card
+    width: 280px
+
+  &-margin
+    &_none
+      margin: 0
+
+    &_sm
+      margin: .5rem
+
+    &_lg
+      margin: 1.2rem
+
+  &-padding
+    &_none
+      padding: 0
+
+    &_sm
+      padding: .5rem
+
+    &_lg
+      padding: 1.2rem
+
+.label-container
+  height: 40px
+  width: 40px
+  border-radius: 4px
+  background-color: #F2994A
+  position: relative
+  overflow: hidden
+  font-weight: 800
+
+.label-container-pattern
+  position: absolute
+  color: black
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  transform: rotate(23deg) scale(4.2)
+  color: rgba(255, 255, 255, .9)
